@@ -1,0 +1,181 @@
+html, body{
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+
+	font-family: "HeroRegular", sans-serif;
+	background-color: #191919;
+}
+
+.banner {
+    background: #cc0000;
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+h1 {
+	font-family: "HeroLight", sans-serif;
+}
+p {
+	font-size: 20px;
+}
+
+.row {
+	display:flex;
+}
+
+.col2{
+	flex: 50%;
+	margin:40px;
+}
+
+/* sections */
+section {
+	padding: 80px 20%;
+	background-color: #181818;
+	color:#fafafa;
+}
+
+#about {
+	background-color: #6B97A7;
+	color:#fafafa;
+}
+
+#contact {
+	background-color:#fafafa;
+	color:#000;
+}
+
+.skillslogo {
+	display:block;
+	width:auto;
+	height:200px;
+	margin:0 auto;
+}
+
+/* nav */
+
+nav {
+	font-family: "HeroLight", sans-serif;
+	position:absolute;
+	padding-left: 50px;
+	padding-top: 50px;
+
+	z-index: 100;
+}
+
+.logo {
+	width: 50px;
+	height: auto;
+	float: left;
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav ul {
+	float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #6492a3;
+	opacity: 0.85;
+}
+
+nav li{
+	float: left;
+	margin: 11px;
+}
+
+nav li:first-child {
+	margin-left: 60px;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 11px;
+    opacity: 1;
+}
+
+/* header */
+header div#background {
+	position: relative;
+    display:block;
+    height: 40%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../imgs/clouds.png')
+}
+
+#caption {
+	position: relative;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000; 
+}
+
+#caption span {
+	font-family: "HeroLight", sans-serif;
+	background-color: #6B97A7;
+	color:white;
+	/*opacity: 0.95;*/
+
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+#me {
+	display: block;
+	float:right;
+	height: 200px;
+	width: auto;
+	border-radius: 100%;
+}
+
+.contactlist {
+	padding-top: 20px;
+	font-size:20px;
+	line-height: 200%;
+}
+
+.contactlist i {
+	margin-right: 20px;
+}
+
+/*response*/
+
+@media screen and (max-width: 500px) {
+	.banner {
+		display: none;
+	}
+	nav {
+		padding: 0 0;
+		margin: 0 auto;
+	}
+	nav li {
+		margin: 10px 10px !important;
+	}
+	section {
+		padding: 80px 5%;
+	}
+	h1 {
+		text-align: center;
+	}
+	.skillslogo {
+		height: 100px;
+	}
+	.row {
+		display:block;
+	}
+	#me {
+		float: none;
+		margin: 0 auto;
+	}
+}
